@@ -70,7 +70,7 @@ struct ExpressView: View {
                 Text("正在查询...")
             }
             .onAppear() {
-                let requrl = "https://www.kuaidi100.com/query?type=\(Provider)&postid=\(nu)&temp=0.\(Int.random(in: 1000000000000000...9999999999999999))&phone=\(phone)"
+                let requrl = "https://www.kuaidi100.com/query?type=\(Provider)&postid=\(nu)&temp=0.\(Int64.random(in: 1000000000000000...9999999999999999))&phone=\(phone)"
                 print(requrl)
                 DarockKit.Network.shared.requestJSON(requrl, headers: Header) { resp, successd in
                     if successd {
