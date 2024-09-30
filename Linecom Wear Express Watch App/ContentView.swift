@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var nu: String = "SF3108015968802"
+    @State var nu: String = ""
     @State var Provider: String = ""
-    @State var phone: String = "3505"
+    @State var phone: String = ""
     var body: some View {
         NavigationStack {
             List {
