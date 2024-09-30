@@ -78,7 +78,7 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    NavigationLink(destination: {AboutView()}, label: {
+                    NavigationLink(destination: {AboutView().navigationTitle("关于")}, label: {
                         HStack {
                             Image(systemName: "info.circle")
                             Text("关于")
