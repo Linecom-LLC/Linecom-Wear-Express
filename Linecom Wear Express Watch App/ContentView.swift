@@ -15,26 +15,75 @@ struct ContentView: View {
         NavigationStack {
             List {
                 Picker("快递承运商", selection: $Provider, content: {
+                    Text("请选择").tag("")
                     Text("顺丰速运").tag("shunfeng")
                     Text("中国邮政EMS").tag("ems")
+                    Text("圆通速递").tag("yuantong")
+                    Text("京东物流").tag("jd")
+                    Text("中通快递").tag("zhongtong")
+                    Text("韵达快递").tag("yunda")
+                    Text("极兔速递").tag("jtexpress")
+                    Text("申通快递").tag("shentong")
+                    Text("德邦物流").tag("debangwuliu")
+                    Text("菜鸟速递（丹鸟）").tag("danniao")
+                    Text("百世快运").tag("baishiwuliu")
                 })
                 TextField("快递单号", text: $nu)
+                    .swipeActions(edge: .trailing, content: {
+                        Button(action: {
+                            nu = ""
+                        }, label: {
+                            Image(systemName: "xmark.circle.fill")
+                        })
+                    })
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
                 }
                 
                 Section {
                     if Provider == "shunfeng" {
-                        NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
-                            Text("查询")
+                        if phone.count != 4 || phone.isEmpty || Provider.isEmpty || nu.isEmpty {
+                            NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
+                                HStack {
+                                    Image(systemName: "rectangle.and.text.magnifyingglass")
+                                    Text("查询")
+                                }
+                            }
+                            .disabled(true)
+                        } else {
+                            NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
+                                HStack {
+                                    Image(systemName: "rectangle.and.text.magnifyingglass")
+                                    Text("查询")
+                                }
+                            }
                         }
-                        .disabled(phone.isEmpty)
                     } else {
-                        NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
-                            Text("查询")
+                        if Provider.isEmpty || nu.isEmpty {
+                            NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
+                                HStack {
+                                    Image(systemName: "rectangle.and.text.magnifyingglass")
+                                    Text("查询")
+                                }
+                            }
+                            .disabled(true)
+                        } else {
+                            NavigationLink(destination: ExpressView(nu: nu, Provider: Provider, phone: phone)) {
+                                HStack {
+                                    Image(systemName: "rectangle.and.text.magnifyingglass")
+                                    Text("查询")
+                                }
+                            }
                         }
-                        .disabled(nu.isEmpty)
                     }
+                }
+                Section {
+                    NavigationLink(destination: {AboutView()}, label: {
+                        HStack {
+                            Image(systemName: "info.circle")
+                            Text("关于")
+                        }
+                    })
                 }
             }
             .navigationTitle("快递查询")

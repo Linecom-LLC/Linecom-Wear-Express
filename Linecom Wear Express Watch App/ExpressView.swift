@@ -25,7 +25,7 @@ struct ExpressView: View {
                                "Priority": "u=3, i",
                                "Accept-Encoding": "gzip, deflate, br",
                                "Cookie": "csrftoken=x4nMKc71QcMQJ8HMuawIPrRRP4k4zp9ywGh2dUBVCN0; _adadqeqwe1321312dasddocHref=; _adadqeqwe1321312dasddocReferrer=; _adadqeqwe1321312dasddocTitle=kuaidi100; snt_query_meta=%7B%22date%22%3A%222024830%22%2C%22nums%22%3A%5B%22SF3108015968802%22%5D%7D; WWWID=WWW91C3E5FEFAE299935E504EF29BC852ED; userRouteID=172767247932793238; sortStatus=0"]
-    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "tiantian": "天天快递", "ems": "EMS快递", "huitongkuaidi": "汇通快递", "debangwuliu": "德邦物流"]
+    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政EMS", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zhongtong": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
     @State var ListofState = ["0": "已揽件", "1": "运输中", "2": "异常", "3": "已送达", "4": "被拒收", "5": "派送中", "6": "被退回", "7": "已转寄", "8": "清关中", "10": "请求失败"]
     @State var status: String = ""
     @State var result = ""
