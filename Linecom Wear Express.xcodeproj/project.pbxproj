@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03FEA05A2CAA643400195891 /* Linecom Wear Express Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03FEA0742CAA68BE00195891 /* DarockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03FEA0732CAA68BE00195891 /* DarockKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03FEA0742CAA68BE00195891 /* DarockKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +134,7 @@
 			);
 			name = "Linecom Wear Express Watch App";
 			packageProductDependencies = (
+				03FEA0732CAA68BE00195891 /* DarockKit */,
 			);
 			productName = "Linecom Wear Express Watch App";
 			productReference = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */;
@@ -164,6 +167,9 @@
 			);
 			mainGroup = 03FEA0402CAA643300195891;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03FEA04A2CAA643300195891 /* Products */;
 			projectDirPath = "";
@@ -489,6 +495,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Darock-Studio/DarockKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		03FEA0732CAA68BE00195891 /* DarockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */;
+			productName = DarockKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 03FEA0412CAA643300195891 /* Project object */;
 }
