@@ -1,5 +1,5 @@
 {
-  "originHash" : "ad7fbd6f4d7b1f458775c710d86f301ee46d9fb7e87a8c6ab1f5c778e15c65b4",
+  "originHash" : "318b42d871c82629d5bca273f33e33ae5cc7c616484284ab140728c3a14191d4",
   "pins" : [
     {
       "identity" : "alamofire",
@@ -13,10 +13,10 @@
     {
       "identity" : "darockkit",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/Darock-Studio/DarockKit",
+      "location" : "https://github.com/Linecom-Lik/DarockKit",
       "state" : {
-        "revision" : "0c80f45f9b1e65903d11951f0172d1c0e4b5f270",
-        "version" : "2.0.0"
+        "branch" : "main",
+        "revision" : "07cc672fa1c59e2edd9986b3a8e134cc221e2d7b"
       }
     },
     {

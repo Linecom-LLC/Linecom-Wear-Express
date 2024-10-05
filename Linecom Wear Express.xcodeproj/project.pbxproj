@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03FEA05A2CAA643400195891 /* Linecom Wear Express Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		03FEA0742CAA68BE00195891 /* DarockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03FEA0732CAA68BE00195891 /* DarockKit */; };
+		032409612CB14B57006AE746 /* DarockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 032409602CB14B57006AE746 /* DarockKit */; };
+		032409632CB14B6E006AE746 /* DarockKit in Frameworks */ = {isa = PBXBuildFile; productRef = 032409622CB14B6E006AE746 /* DarockKit */; };
+		03FEA05A2CAA643400195891 /* Linecom Wear Express Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03FEA0492CAA643300195891 /* Linecom Wear Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Wear Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FEA0492CAA643300195891 /* Linecom Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Wear Express Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032409632CB14B6E006AE746 /* DarockKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,18 +67,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FEA0742CAA68BE00195891 /* DarockKit in Frameworks */,
+				032409612CB14B57006AE746 /* DarockKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		032409592CB1459D006AE746 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		03FEA0402CAA643300195891 = {
 			isa = PBXGroup;
 			children = (
 				03FEA04B2CAA643300195891 /* Linecom Wear Express */,
 				03FEA05D2CAA643400195891 /* Linecom Wear Express Watch App */,
+				032409592CB1459D006AE746 /* Frameworks */,
 				03FEA04A2CAA643300195891 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,7 +94,7 @@
 		03FEA04A2CAA643300195891 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				03FEA0492CAA643300195891 /* Linecom Wear Express.app */,
+				03FEA0492CAA643300195891 /* Linecom Express Query.app */,
 				03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */,
 			);
 			name = Products;
@@ -93,9 +103,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03FEA0482CAA643300195891 /* Linecom Wear Express */ = {
+		03FEA0482CAA643300195891 /* Linecom Express Query */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03FEA06D2CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Wear Express" */;
+			buildConfigurationList = 03FEA06D2CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Express Query" */;
 			buildPhases = (
 				03FEA0452CAA643300195891 /* Sources */,
 				03FEA0462CAA643300195891 /* Frameworks */,
@@ -110,11 +120,12 @@
 			fileSystemSynchronizedGroups = (
 				03FEA04B2CAA643300195891 /* Linecom Wear Express */,
 			);
-			name = "Linecom Wear Express";
+			name = "Linecom Express Query";
 			packageProductDependencies = (
+				032409622CB14B6E006AE746 /* DarockKit */,
 			);
 			productName = "Linecom Wear Express";
-			productReference = 03FEA0492CAA643300195891 /* Linecom Wear Express.app */;
+			productReference = 03FEA0492CAA643300195891 /* Linecom Express Query.app */;
 			productType = "com.apple.product-type.application";
 		};
 		03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */ = {
@@ -134,7 +145,7 @@
 			);
 			name = "Linecom Wear Express Watch App";
 			packageProductDependencies = (
-				03FEA0732CAA68BE00195891 /* DarockKit */,
+				032409602CB14B57006AE746 /* DarockKit */,
 			);
 			productName = "Linecom Wear Express Watch App";
 			productReference = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */;
@@ -168,14 +179,14 @@
 			mainGroup = 03FEA0402CAA643300195891;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */,
+				0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 03FEA04A2CAA643300195891 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				03FEA0482CAA643300195891 /* Linecom Wear Express */,
+				03FEA0482CAA643300195891 /* Linecom Express Query */,
 				03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */,
 			);
 		};
@@ -218,6 +229,7 @@
 /* Begin PBXTargetDependency section */
 		03FEA05C2CAA643400195891 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = 03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */;
 			targetProxy = 03FEA05B2CAA643400195891 /* PBXContainerItemProxy */;
 		};
@@ -358,7 +370,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -391,7 +403,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -408,30 +420,37 @@
 		03FEA06E2CAA643500195891 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Linecom Wear Express/Linecom Wear Express.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Linecom Wear Express/Preview Content\"";
 				DEVELOPMENT_TEAM = B38QUJMY47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Express Query";
+				INFOPLIST_FILE = "Linecom-Wear-Express-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "速递查询";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -441,30 +460,37 @@
 		03FEA06F2CAA643500195891 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon iOS";
+				"ASSETCATALOG_COMPILER_APPICON_NAME[sdk=macosx*]" = "AppIcon macOS";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Linecom Wear Express/Linecom Wear Express.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Linecom Wear Express/Preview Content\"";
 				DEVELOPMENT_TEAM = B38QUJMY47;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Express Query";
+				INFOPLIST_FILE = "Linecom-Wear-Express-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "速递查询";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = NO;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -493,7 +519,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03FEA06D2CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Wear Express" */ = {
+		03FEA06D2CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Express Query" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03FEA06E2CAA643500195891 /* Debug */,
@@ -505,20 +531,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */ = {
+		0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Darock-Studio/DarockKit";
+			repositoryURL = "https://github.com/Linecom-Lik/DarockKit";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
+				branch = main;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		03FEA0732CAA68BE00195891 /* DarockKit */ = {
+		032409602CB14B57006AE746 /* DarockKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 03FEA0722CAA68BE00195891 /* XCRemoteSwiftPackageReference "DarockKit" */;
+			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
+			productName = DarockKit;
+		};
+		032409622CB14B6E006AE746 /* DarockKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
 			productName = DarockKit;
 		};
 /* End XCSwiftPackageProductDependency section */
