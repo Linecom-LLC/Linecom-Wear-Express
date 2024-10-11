@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032409792CB158AF006AE746 /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		032409792CB158AF006AE746 /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03C665F52CB952FC00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F42CB952FC00362D43 /* LinecomKit */; };
 		03C665F92CB9530900362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F82CB9530900362D43 /* LinecomKit */; };
 		03C665FB2CB9534E00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665FA2CB9534E00362D43 /* LinecomKit */; };
-		03FEA05A2CAA643400195891 /* Linecom Wear Express Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03FEA05A2CAA643400195891 /* Linecom Express Query Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				03FEA05A2CAA643400195891 /* Linecom Wear Express Watch App.app in Embed Watch Content */,
+				03FEA05A2CAA643400195891 /* Linecom Express Query Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,7 @@
 /* Begin PBXFileReference section */
 		0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom China Post Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FEA0492CAA643300195891 /* Linecom Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Wear Express Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -143,7 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				03FEA0492CAA643300195891 /* Linecom Express Query.app */,
-				03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */,
+				03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */,
 				0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */,
 			);
 			name = Products;
@@ -202,9 +202,9 @@
 			productReference = 03FEA0492CAA643300195891 /* Linecom Express Query.app */;
 			productType = "com.apple.product-type.application";
 		};
-		03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */ = {
+		03FEA0582CAA643400195891 /* Linecom Express Query Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03FEA0692CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Wear Express Watch App" */;
+			buildConfigurationList = 03FEA0692CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Express Query Watch App" */;
 			buildPhases = (
 				03FEA0552CAA643400195891 /* Sources */,
 				03FEA0562CAA643400195891 /* Frameworks */,
@@ -217,12 +217,12 @@
 			fileSystemSynchronizedGroups = (
 				03FEA05D2CAA643400195891 /* Linecom Wear Express Watch App */,
 			);
-			name = "Linecom Wear Express Watch App";
+			name = "Linecom Express Query Watch App";
 			packageProductDependencies = (
 				03C665FA2CB9534E00362D43 /* LinecomKit */,
 			);
 			productName = "Linecom Wear Express Watch App";
-			productReference = 03FEA0592CAA643400195891 /* Linecom Wear Express Watch App.app */;
+			productReference = 03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 03FEA0442CAA643300195891 /* Build configuration list for PBXProject "Linecom Wear Express" */;
+			buildConfigurationList = 03FEA0442CAA643300195891 /* Build configuration list for PBXProject "Linecom Express Query" */;
 			developmentRegion = "zh-Hans";
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -264,7 +264,7 @@
 			projectRoot = "";
 			targets = (
 				03FEA0482CAA643300195891 /* Linecom Express Query */,
-				03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */,
+				03FEA0582CAA643400195891 /* Linecom Express Query Watch App */,
 				032409692CB158AE006AE746 /* Linecom China Post Express Query */,
 			);
 		};
@@ -321,14 +321,12 @@
 /* Begin PBXTargetDependency section */
 		032409782CB158AF006AE746 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
 			target = 032409692CB158AE006AE746 /* Linecom China Post Express Query */;
 			targetProxy = 032409772CB158AF006AE746 /* PBXContainerItemProxy */;
 		};
 		03FEA05C2CAA643400195891 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 03FEA0582CAA643400195891 /* Linecom Wear Express Watch App */;
+			target = 03FEA0582CAA643400195891 /* Linecom Express Query Watch App */;
 			targetProxy = 03FEA05B2CAA643400195891 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -597,7 +595,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom-Wear-Express-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "速递查询";
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -637,7 +635,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom-Wear-Express-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "速递查询";
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -677,7 +675,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03FEA0442CAA643300195891 /* Build configuration list for PBXProject "Linecom Wear Express" */ = {
+		03FEA0442CAA643300195891 /* Build configuration list for PBXProject "Linecom Express Query" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03FEA0672CAA643500195891 /* Debug */,
@@ -686,7 +684,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		03FEA0692CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Wear Express Watch App" */ = {
+		03FEA0692CAA643500195891 /* Build configuration list for PBXNativeTarget "Linecom Express Query Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				03FEA06A2CAA643500195891 /* Debug */,
