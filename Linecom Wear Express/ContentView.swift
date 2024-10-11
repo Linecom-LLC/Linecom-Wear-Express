@@ -14,6 +14,7 @@ struct ContentView: View {
     @State var phone: String = ""
     @AppStorage("Firstused") var used = false
     @AppStorage("CachedToken") var token = ""
+    private let characterLimit = 4
     var body: some View {
         NavigationStack {
             List {
@@ -42,6 +43,12 @@ struct ContentView: View {
                     .autocorrectionDisabled()
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
+                        .keyboardType(.numberPad)
+                        .onChange(of: phone) { newValue in
+                            if newValue.count > characterLimit {
+                                phone = String(newValue.prefix(characterLimit))
+                            }
+                        }
                 }
                 
                 Section {

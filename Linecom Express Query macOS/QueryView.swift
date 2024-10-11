@@ -1,23 +1,24 @@
 //
-//  ContentView.swift
-//  Linecom Wear Express Watch App
+//  QueryView.swift
+//  澪软速递查询
 //
-//  Created by 程炜栋 on 2024/9/30.
+//  Created by 程炜栋 on 2024/10/11.
 //
 
 import SwiftUI
 import LinecomKit
 
-struct ContentView: View {
+struct QueryView: View {
     @State var nu: String = ""
     @State var Provider: String = ""
     @State var phone: String = ""
     @AppStorage("Firstused") var used = false
     @AppStorage("CachedToken") var token = ""
+    @State var ActiveLink = false
     private let characterLimit = 4
     var body: some View {
         NavigationStack {
-            List {
+            
                 Picker("快递承运商", selection: $Provider, content: {
                     Text("请选择").tag("")
                     Text("顺丰速运").tag("shunfeng")
@@ -33,7 +34,6 @@ struct ContentView: View {
                     Text("百世快运").tag("baishiwuliu")
                 })
                 TextField("快递单号", text: $nu)
-                    .autocorrectionDisabled()
                     .swipeActions(edge: .trailing, content: {
                         Button(action: {
                             nu = ""
@@ -41,6 +41,8 @@ struct ContentView: View {
                             Image(systemName: "xmark.circle.fill")
                         })
                     })
+                    .autocorrectionDisabled()
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
                         .onChange(of: phone) { newValue in
@@ -86,18 +88,8 @@ struct ContentView: View {
                             }
                         }
                     }
-                }
-                Section {
-                    NavigationLink(destination: {AboutView().navigationTitle("关于")}, label: {
-                        HStack {
-                            Image(systemName: "info.circle")
-                            Text("关于")
-                        }
-                    })
-                }
             }
-            .navigationTitle("快递查询")
-            .containerBackground(Color(hue: 100/360, saturation: 60/100, brightness: 100/100).gradient, for: .navigation)
+                
             .onAppear() {
                 if !used {
                     getcsrfToken()
@@ -117,5 +109,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    QueryView()
 }
