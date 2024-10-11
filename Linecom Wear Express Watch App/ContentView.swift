@@ -90,6 +90,7 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("快递查询")
+            .containerBackground(Color(hue: 100/360, saturation: 60/100, brightness: 100/100).gradient, for: .navigation)
             .onAppear() {
                 if !used {
                     getcsrfToken()
