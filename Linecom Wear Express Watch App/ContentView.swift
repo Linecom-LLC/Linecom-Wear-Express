@@ -32,6 +32,7 @@ struct ContentView: View {
                     Text("百世快运").tag("baishiwuliu")
                 })
                 TextField("快递单号", text: $nu)
+                    .autocorrectionDisabled()
                     .swipeActions(edge: .trailing, content: {
                         Button(action: {
                             nu = ""

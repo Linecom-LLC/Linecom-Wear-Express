@@ -39,6 +39,7 @@ struct ContentView: View {
                             Image(systemName: "xmark.circle.fill")
                         })
                     })
+                    .autocorrectionDisabled()
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
                 }

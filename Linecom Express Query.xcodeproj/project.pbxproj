@@ -345,7 +345,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom China Post Express Query/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Linecom Express Query";
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软中邮速递查询";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -379,7 +379,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom China Post Express Query/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Linecom Express Query";
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软中邮速递查询";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

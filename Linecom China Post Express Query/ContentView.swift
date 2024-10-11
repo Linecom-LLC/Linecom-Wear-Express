@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import LinecomKit
 
 struct ContentView: View {
     @State var nu: String = ""
     @State var Provider: String = "ems"
     @State var phone: String = ""
-    @State var selecation: String? = "Home"
+    @AppStorage("Firstused") var used = false
+    @AppStorage("CachedToken") var token = ""
     var body: some View {
         NavigationView {
             List {
                 TextField("快递单号", text: $nu)
+                    .autocorrectionDisabled()
                     .swipeActions(edge: .trailing, content: {
                         Button(action: {
                             nu = ""
@@ -26,16 +29,6 @@ struct ContentView: View {
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
                 }
-                #if os(macOS)
-                Section {
-                    NavigationLink(destination: WelcomeView(), tag: "Home", selection: $selecation) {
-                            HStack {
-                                Image(systemName: "house")
-                                Text("首页")
-                            }
-                    }
-                }
-                #endif
                 
                 Section {
                     if Provider == "shunfeng" {
@@ -76,6 +69,20 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("中国邮政快递查询")
+            .onAppear() {
+                if !used {
+                    getcsrfToken()
+                    used = true
+                }
+            }
+        }
+    }
+    func getcsrfToken() {
+        let endpoint = "https://api.linecom.net.cn/express/token"
+        LinecomKit.NetworkAction.shared.requestString(endpoint) { resp, successd in
+            if successd {
+                token = resp
+            }
         }
     }
 }
