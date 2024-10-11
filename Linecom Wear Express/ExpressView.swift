@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import DarockKit
+import LinecomKit
 import Alamofire
 
 struct ExpressView: View {
@@ -89,7 +89,7 @@ struct ExpressView: View {
     
     func getcsrfToken() {
         let endpoint = "https://api.linecom.net.cn/express/token"
-        DarockKit.Network.shared.requestString(endpoint) { resp, successd in
+        LinecomKit.NetworkAction.shared.requestString(endpoint) { resp, successd in
             if successd {
                 token = resp
                 tokenstate = true
@@ -113,7 +113,7 @@ struct ExpressView: View {
                                    "Accept-Encoding": "gzip, deflate, br",
                                    "Cookie": "csrftoken=\(token); _adadqeqwe1321312dasddocHref=; _adadqeqwe1321312dasddocReferrer=; _adadqeqwe1321312dasddocTitle=kuaidi100; snt_query_meta=%7B%22date%22%3A%222024830%22%2C%22nums%22%3A%5B%22SF3108015968802%22%5D%7D; WWWID=WWW91C3E5FEFAE299935E504EF29BC852ED; userRouteID=172767247932793238; sortStatus=0"]
 //        if tokenstate {
-            DarockKit.Network.shared.requestJSON(requrl, headers: Header) { resp, successd in
+            LinecomKit.NetworkAction.shared.requestJSON(requrl, headers: Header) { resp, successd in
                 if successd {
                     nowState = resp["state"].string ?? "0"
                     status = resp["status"].string ?? "10"

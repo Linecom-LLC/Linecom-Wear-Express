@@ -13,7 +13,7 @@ struct ContentView: View {
     @State var phone: String = ""
     @State var selecation: String? = "Home"
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 Picker("快递承运商", selection: $Provider, content: {
                     Text("请选择").tag("")
