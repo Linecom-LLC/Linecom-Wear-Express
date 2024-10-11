@@ -15,7 +15,7 @@ struct ExpressView: View {
     var phone: String
     @State var tokenstate = false
     @AppStorage("CachedToken") var token = ""
-    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政EMS", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zhongtong": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
+    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zhongtong": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
     @State var ListofState = ["0": "已揽件", "1": "运输中", "2": "异常", "3": "已送达", "4": "被拒收", "5": "派送中", "6": "被退回", "7": "已转寄", "8": "清关中", "10": "请求失败"]
     @State var status: String = ""
     @State var result = ""
@@ -92,7 +92,6 @@ struct ExpressView: View {
         LinecomKit.NetworkAction.shared.requestString(endpoint) { resp, successd in
             if successd {
                 token = resp
-                tokenstate = true
             }
         }
     }
@@ -100,7 +99,7 @@ struct ExpressView: View {
     func doQuery() {
         let requrl = "https://www.kuaidi100.com/query?type=\(Provider)&postid=\(nu)&temp=0.\(Int64.random(in: 1000000000000000...9999999999999999))&phone=\(phone)"
         print(requrl)
-        var Header: HTTPHeaders = ["Host": "www.kuaidi100.com",
+        let Header: HTTPHeaders = ["Host": "www.kuaidi100.com",
                                    "Accept": "application/json, text/javascript, */*; q=0.01",
                                    "Sec-Fetch-Site": "same-origin",
                                    "Sec-Fetch-Mode": "cors",
