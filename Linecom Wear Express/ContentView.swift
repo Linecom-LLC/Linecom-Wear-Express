@@ -40,16 +40,6 @@ struct ContentView: View {
                 if Provider == "shunfeng" {
                     TextField("手机号后四位", text: $phone)
                 }
-                #if os(macOS)
-                Section {
-                    NavigationLink(destination: WelcomeView(), tag: "Home", selection: $selecation) {
-                            HStack {
-                                Image(systemName: "house")
-                                Text("首页")
-                            }
-                    }
-                }
-                #endif
                 
                 Section {
                     if Provider == "shunfeng" {
