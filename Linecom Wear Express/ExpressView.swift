@@ -92,7 +92,6 @@ struct ExpressView: View {
         LinecomKit.NetworkAction.shared.requestString(endpoint) { resp, successd in
             if successd {
                 token = resp
-                tokenstate = true
             }
         }
     }
