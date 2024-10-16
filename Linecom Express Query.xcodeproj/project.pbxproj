@@ -12,6 +12,7 @@
 		03C665F92CB9530900362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F82CB9530900362D43 /* LinecomKit */; };
 		03C665FB2CB9534E00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665FA2CB9534E00362D43 /* LinecomKit */; };
 		03C666142CB9579300362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C666132CB9579300362D43 /* LinecomKit */; };
+		03C6663C2CB97B5C00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C6663B2CB97B5C00362D43 /* LinecomKit */; };
 		03FEA05A2CAA643400195891 /* Linecom Express Query Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 /* Begin PBXFileReference section */
 		0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom China Post Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C666002CB9572D00362D43 /* 澪软速递查询.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "澪软速递查询.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FEA0492CAA643300195891 /* Linecom Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +90,11 @@
 			path = "Linecom Express Query macOS";
 			sourceTree = "<group>";
 		};
+		03C6662A2CB970F900362D43 /* Linecom Express Query tvOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Linecom Express Query tvOS";
+			sourceTree = "<group>";
+		};
 		03FEA04B2CAA643300195891 /* Linecom Wear Express */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Linecom Wear Express";
@@ -114,6 +121,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				03C666142CB9579300362D43 /* LinecomKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C666262CB970F900362D43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C6663C2CB97B5C00362D43 /* LinecomKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +165,7 @@
 				03FEA05D2CAA643400195891 /* Linecom Wear Express Watch App */,
 				0324096B2CB158AE006AE746 /* Linecom China Post Express Query */,
 				03C666012CB9572D00362D43 /* Linecom Express Query macOS */,
+				03C6662A2CB970F900362D43 /* Linecom Express Query tvOS */,
 				032409592CB1459D006AE746 /* Frameworks */,
 				03FEA04A2CAA643300195891 /* Products */,
 			);
@@ -162,6 +178,7 @@
 				03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */,
 				0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */,
 				03C666002CB9572D00362D43 /* 澪软速递查询.app */,
+				03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -213,6 +230,29 @@
 			);
 			productName = "Linecom Express Query macOS";
 			productReference = 03C666002CB9572D00362D43 /* 澪软速递查询.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03C666282CB970F900362D43 /* Linecom Express Query tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C666342CB970FA00362D43 /* Build configuration list for PBXNativeTarget "Linecom Express Query tvOS" */;
+			buildPhases = (
+				03C666252CB970F900362D43 /* Sources */,
+				03C666262CB970F900362D43 /* Frameworks */,
+				03C666272CB970F900362D43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				03C6662A2CB970F900362D43 /* Linecom Express Query tvOS */,
+			);
+			name = "Linecom Express Query tvOS";
+			packageProductDependencies = (
+				03C6663B2CB97B5C00362D43 /* LinecomKit */,
+			);
+			productName = "Linecom Express Query tvOS";
+			productReference = 03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		03FEA0482CAA643300195891 /* Linecom Express Query */ = {
@@ -281,6 +321,9 @@
 					03C665FF2CB9572D00362D43 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					03C666282CB970F900362D43 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					03FEA0482CAA643300195891 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -310,6 +353,7 @@
 				03FEA0582CAA643400195891 /* Linecom Express Query Watch App */,
 				032409692CB158AE006AE746 /* Linecom China Post Express Query */,
 				03C665FF2CB9572D00362D43 /* 澪软速递查询 */,
+				03C666282CB970F900362D43 /* Linecom Express Query tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -323,6 +367,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		03C665FE2CB9572D00362D43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C666272CB970F900362D43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,6 +405,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		03C665FC2CB9572D00362D43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03C666252CB970F900362D43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -520,6 +578,67 @@
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		03C666352CB970FA00362D43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Linecom Express Query tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = B38QUJMY47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery.tvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+			};
+			name = Debug;
+		};
+		03C666362CB970FA00362D43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Linecom Express Query tvOS/Preview Content\"";
+				DEVELOPMENT_TEAM = B38QUJMY47;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.linecom.expressquery.tvOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 17.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -806,6 +925,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		03C666342CB970FA00362D43 /* Build configuration list for PBXNativeTarget "Linecom Express Query tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C666352CB970FA00362D43 /* Debug */,
+				03C666362CB970FA00362D43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		03FEA0442CAA643300195891 /* Build configuration list for PBXProject "Linecom Express Query" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -863,6 +991,11 @@
 			productName = LinecomKit;
 		};
 		03C666132CB9579300362D43 /* LinecomKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
+			productName = LinecomKit;
+		};
+		03C6663B2CB97B5C00362D43 /* LinecomKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
 			productName = LinecomKit;
