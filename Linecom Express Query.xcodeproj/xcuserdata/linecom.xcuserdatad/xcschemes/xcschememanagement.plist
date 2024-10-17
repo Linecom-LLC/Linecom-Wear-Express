@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>Linecom Express Query iPadOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>Linecom Express Query macOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -47,7 +52,7 @@
 		<key>Playground (Playground).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>8</integer>
 		</dict>
 		<key>澪软速递查询.xcscheme_^#shared#^_</key>
 		<dict>
