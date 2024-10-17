@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		030C93802CC15B38001DC42F /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 030C937F2CC15B38001DC42F /* LinecomKit */; };
+		030C93812CC15C46001DC42F /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		032409792CB158AF006AE746 /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03C665F52CB952FC00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F42CB952FC00362D43 /* LinecomKit */; };
 		03C665F92CB9530900362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F82CB9530900362D43 /* LinecomKit */; };
@@ -18,6 +19,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		030C93822CC15C46001DC42F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FEA0412CAA643300195891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032409692CB158AE006AE746;
+			remoteInfo = "Linecom China Post Express Query";
+		};
+		030C93852CC15C4D001DC42F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03FEA0412CAA643300195891 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032409692CB158AE006AE746;
+			remoteInfo = "Linecom China Post Express Query";
+		};
 		032409772CB158AF006AE746 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 03FEA0412CAA643300195891 /* Project object */;
@@ -35,6 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		030C93842CC15C46001DC42F /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				030C93812CC15C46001DC42F /* Linecom China Post Express Query.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0324097E2CB158AF006AE746 /* Embed App Clips */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,10 +236,13 @@
 				030C93632CC15A9E001DC42F /* Sources */,
 				030C93642CC15A9E001DC42F /* Frameworks */,
 				030C93652CC15A9E001DC42F /* Resources */,
+				030C93842CC15C46001DC42F /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				030C93832CC15C46001DC42F /* PBXTargetDependency */,
+				030C93862CC15C4D001DC42F /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				030C93682CC15A9E001DC42F /* Linecom Express Query iPadOS */,
@@ -493,6 +522,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		030C93832CC15C46001DC42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032409692CB158AE006AE746 /* Linecom China Post Express Query */;
+			targetProxy = 030C93822CC15C46001DC42F /* PBXContainerItemProxy */;
+		};
+		030C93862CC15C4D001DC42F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032409692CB158AE006AE746 /* Linecom China Post Express Query */;
+			targetProxy = 030C93852CC15C4D001DC42F /* PBXContainerItemProxy */;
+		};
 		032409782CB158AF006AE746 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 032409692CB158AE006AE746 /* Linecom China Post Express Query */;
