@@ -7,6 +7,7 @@
 
 import Foundation
 import AppKit
+import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
@@ -17,11 +18,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 NSApplication.shared.mainMenu = topLevelObjects?.first(where: { $0 is NSMenu }) as? NSMenu
             }
         }
-        
-        if let window = NSApplication.shared.windows.first {
-                        // 禁用全屏模式
-            window.styleMask.remove(.resizable)
-        }
+    }
+    func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
     }
     @IBAction func openHelp(_ sender: Any) {
         NSWorkspace.shared.open(URL(string: "https://lkurl.top/support")!)
