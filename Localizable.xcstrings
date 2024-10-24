@@ -1,0 +1,118 @@
+{
+  "sourceLanguage" : "zh-Hans",
+  "strings" : {
+    "%@" : {
+
+    },
+    "Developed by Linecom" : {
+
+    },
+    "中国邮政" : {
+      "localizations" : {
+        "zh-Hant-TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "中國郵政"
+          }
+        }
+      }
+    },
+    "中通快递" : {
+
+    },
+    "京东物流" : {
+
+    },
+    "关于" : {
+      "localizations" : {
+        "zh-Hant-TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "關於"
+          }
+        }
+      }
+    },
+    "圆通速递" : {
+
+    },
+    "基本信息" : {
+
+    },
+    "当前状态：%@" : {
+
+    },
+    "德邦物流" : {
+
+    },
+    "快递单号" : {
+
+    },
+    "快递承运商" : {
+
+    },
+    "手机号后四位" : {
+      "localizations" : {
+        "zh-Hant-TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "門號後四位"
+          }
+        }
+      }
+    },
+    "承运商：%@" : {
+
+    },
+    "极兔速递" : {
+
+    },
+    "查询" : {
+
+    },
+    "正在查询..." : {
+
+    },
+    "澪空软件速递查询" : {
+
+    },
+    "物流轨迹" : {
+
+    },
+    "申通快递" : {
+
+    },
+    "百世快运" : {
+
+    },
+    "菜鸟速递（丹鸟）" : {
+
+    },
+    "请求失败" : {
+
+    },
+    "请选择" : {
+
+    },
+    "运单详情" : {
+
+    },
+    "韵达快递" : {
+
+    },
+    "顺丰速运" : {
+
+    },
+    "首页" : {
+      "localizations" : {
+        "zh-Hant-TW" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "首頁"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

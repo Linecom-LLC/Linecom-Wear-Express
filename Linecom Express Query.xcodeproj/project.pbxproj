@@ -10,6 +10,11 @@
 		030C93802CC15B38001DC42F /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 030C937F2CC15B38001DC42F /* LinecomKit */; };
 		030C93812CC15C46001DC42F /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		032409792CB158AF006AE746 /* Linecom China Post Express Query.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		03C245812CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
+		03C245822CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
+		03C245832CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
+		03C245842CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
+		03C245852CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
 		03C665F52CB952FC00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F42CB952FC00362D43 /* LinecomKit */; };
 		03C665F92CB9530900362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665F82CB9530900362D43 /* LinecomKit */; };
 		03C665FB2CB9534E00362D43 /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03C665FA2CB9534E00362D43 /* LinecomKit */; };
@@ -88,6 +93,7 @@
 /* Begin PBXFileReference section */
 		030C93672CC15A9E001DC42F /* Linecom Express Query iPadOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query iPadOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0324096A2CB158AE006AE746 /* Linecom China Post Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom China Post Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C245802CCA87BB00827826 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		03C666002CB9572D00362D43 /* 澪软速递查询.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "澪软速递查询.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03FEA0492CAA643300195891 /* Linecom Express Query.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +208,7 @@
 		03FEA0402CAA643300195891 = {
 			isa = PBXGroup;
 			children = (
+				03C245802CCA87BB00827826 /* Localizable.xcstrings */,
 				03FEA04B2CAA643300195891 /* Linecom Express Query */,
 				03FEA05D2CAA643400195891 /* Linecom Express Query Watch App */,
 				0324096B2CB158AE006AE746 /* Linecom China Post Express Query */,
@@ -410,6 +417,8 @@
 			knownRegions = (
 				Base,
 				"zh-Hans",
+				"zh-Hant",
+				"zh-Hant-TW",
 			);
 			mainGroup = 03FEA0402CAA643300195891;
 			minimizedProjectReferenceProxies = 1;
@@ -443,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C245812CCA87BB00827826 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C245842CCA87BB00827826 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +468,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C245852CCA87BB00827826 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C245822CCA87BB00827826 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +484,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C245832CCA87BB00827826 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +889,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -929,6 +944,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
