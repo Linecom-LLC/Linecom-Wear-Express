@@ -18,8 +18,20 @@ struct ContentView: View {
     var body: some View {
         NavigationSplitView {
             List(selection: $SideSelected) {
-                Text("首页").tag("Home")
-                Text("关于").tag("About")
+                HStack {
+                    Image(systemName: "house.fill")
+                        .foregroundColor(SideSelected == "Home" ? .white : .blue)
+                    Text("首页")
+                }
+                    .tag("Home")
+                
+                HStack {
+                    Image(systemName: "info.circle")
+                        .padding(.trailing, 4)
+                        .foregroundColor(SideSelected == "About" ? .white : .blue)
+                    Text("关于")
+                }
+                    .tag("About")
             }
         } detail: {
             if SideSelected == "Home" {
