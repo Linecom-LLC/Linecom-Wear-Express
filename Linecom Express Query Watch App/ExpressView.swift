@@ -13,6 +13,7 @@ struct ExpressView: View {
     var nu: String
     var Provider: String
     var phone: String
+    var isBookmark: Bool = false
     @State var tokenstate = false
     @AppStorage("CachedToken") var token = ""
     @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zhongtong": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
@@ -23,6 +24,7 @@ struct ExpressView: View {
     @State var deliveryItems: [DeliveryItem] = []
     @State var isLoading: Bool = true
     @State var errormsg: String = ""
+    @State var added: Bool = false
     var body: some View {
         if !isLoading && status == "200" {
         List {
@@ -31,6 +33,25 @@ struct ExpressView: View {
                 Text("承运商：\(ListofExpress[Provider] ?? "未知")")
                 Text("当前状态：\(ListofState[nowState] ?? "未知")")
                 
+            }
+            if !isBookmark {
+                Section {
+                    Button(action: {
+                        BookmarkManager().addBookmark(nu: nu, provider: Provider, phone: phone)
+                        added = true
+                    }, label: {
+                        HStack {
+                            if !added {
+                                Image(systemName: "plus.circle.fill")
+                                Text("添加到收藏")
+                            } else {
+                                Image(systemName: "checkmark")
+                                Text("添加成功")
+                            }
+                        }
+                    })
+                    .disabled(added)
+                }
             }
             Section(header: Text("物流轨迹")) {
                 ForEach(deliveryItems) { item in
@@ -123,8 +144,4 @@ struct ExpressView: View {
     struct DeliveryData: Codable {
         let data: [DeliveryItem]
     }
-    
-    //#Preview {
-    //    ExpressView()
-    //}
 }

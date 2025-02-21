@@ -104,6 +104,11 @@ struct ContentView: View {
                     used = true
                 }
             }
+            .toolbar() {
+                ToolbarItem(placement: .topBarLeading, content: {
+                    NavigationLink(destination: BookmarkView(), label: {Image(systemName: "bookmark")})
+                })
+            }
         }
     }
     func getcsrfToken() {
