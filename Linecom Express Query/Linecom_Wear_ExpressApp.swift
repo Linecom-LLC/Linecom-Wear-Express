@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import UIKit
 
 @main
 struct Linecom_Wear_ExpressApp: App {
+    @AppStorage("hasOrderHandle") var hasOrderHandle: Bool = false
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL() { url in
+                    UIPasteboard.general.string = url.absoluteString
+                    hasOrderHandle = true
+                }
         }
     }
 }

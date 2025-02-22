@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct Linecom_Express_Query_AppClipApp: App {
+    @AppStorage("hasOrderHandle") var hasOrderHandle: Bool = false
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .onOpenURL() { url in
+                    UIPasteboard.general.string = url.absoluteString
+                    hasOrderHandle = true
+                }
         }
     }
 }

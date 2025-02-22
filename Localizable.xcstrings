@@ -7,6 +7,16 @@
     "Developed by Linecom" : {
 
     },
+    "https://express.linecom.net.cn/ticket?nu=%@&provider=%@&phone=%@" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "https://express.linecom.net.cn/ticket?nu=%1$@&provider=%2$@&phone=%3$@"
+          }
+        }
+      }
+    },
     "中国邮政" : {
       "localizations" : {
         "zh-Hant-TW" : {
@@ -24,6 +34,9 @@
 
     },
     "京东物流" : {
+
+    },
+    "使用 澪空软件速递查询，随时随地查询快件信息！" : {
 
     },
     "关于" : {
@@ -68,6 +81,9 @@
       }
     },
     "承运商：%@" : {
+
+    },
+    "来自分享的订单" : {
 
     },
     "极兔速递" : {

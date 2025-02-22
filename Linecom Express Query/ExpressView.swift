@@ -77,7 +77,7 @@ struct ExpressView: View {
         .navigationTitle("运单详情")
         .toolbar() {
             ToolbarItem(placement: .topBarTrailing, content: {
-                ShareLink(item: URL(string: "https://appclip.linecom.net.cn/express?nu=\(nu)&provider=\(Provider)&phone=\(phone)")!, subject: Text("快递订单\(nu)"), message: Text("使用 澪空软件速递查询，在任何位置追踪您的快件"))
+                ShareLink(item: URL(string: "https://express.linecom.net.cn/ticket?nu=\(nu)&provider=\(Provider)&phone=\(phone)")!, message: Text("使用 澪空软件速递查询，随时随地查询快件信息！"))
             })
         }
         } else if isLoading {
