@@ -89,12 +89,7 @@ struct ContentView: View {
                     }
                 }
                 Section {
-                    NavigationLink(destination: {AboutView().navigationTitle("关于")}, label: {
-                        HStack {
-                            Image(systemName: "info.circle")
-                            Text("关于")
-                        }
-                    })
+                    
                 }
             }
             .navigationTitle("快递查询")
@@ -103,6 +98,25 @@ struct ContentView: View {
                     getcsrfToken()
                     used = true
                 }
+            }
+            .toolbar() {
+                ToolbarItem(placement: .topBarLeading, content: {
+                    NavigationLink(destination: BookmarkView(), label: {
+                        HStack {
+                            Image(systemName: "bookmark")
+                            Text("书签")
+                        }
+                    })
+                })
+                
+                ToolbarItem(placement: .topBarTrailing, content: {
+                    NavigationLink(destination: {AboutView().navigationTitle("关于")}, label: {
+                        HStack {
+                            Text("关于")
+                            Image(systemName: "info.circle")
+                        }
+                    })
+                })
             }
         }
     }

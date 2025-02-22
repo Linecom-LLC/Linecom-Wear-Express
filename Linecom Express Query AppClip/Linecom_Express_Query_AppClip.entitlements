@@ -5,10 +5,11 @@
 	<key>com.apple.developer.associated-domains</key>
 	<array>
 		<string>applinks:express.linecom.net.cn</string>
+		<string>appclips:express.linecom.net.cn</string>
 	</array>
-	<key>com.apple.security.app-sandbox</key>
-	<true/>
-	<key>com.apple.security.network.client</key>
-	<true/>
+	<key>com.apple.developer.parent-application-identifiers</key>
+	<array>
+		<string>$(AppIdentifierPrefix)com.linecom.expressquery</string>
+	</array>
 </dict>
 </plist>
