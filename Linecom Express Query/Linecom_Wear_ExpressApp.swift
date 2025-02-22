@@ -10,13 +10,14 @@ import UIKit
 
 @main
 struct Linecom_Wear_ExpressApp: App {
-    @AppStorage("hasOrderHandle") var hasOrderHandle: Bool = false
+    @StateObject var universalLinkManager = UniversalLinkManager()
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .onOpenURL() { url in
-                    UIPasteboard.general.string = url.absoluteString
-                    hasOrderHandle = true
+                .environmentObject(universalLinkManager) // 注入环境对象
+                .onOpenURL { url in
+                    // 解析 Universal Link 并更新状态
+                    universalLinkManager.handleUniversalLink(url: url)
                 }
         }
     }

@@ -9,61 +9,16 @@ import SwiftUI
 import LinecomKit
 
 struct ContentView: View {
-    @State var orderNu: String = ""
-    @State var orderProvider: String = ""
-    @State var orderPhone: String = ""
+    @EnvironmentObject var universalLinkManager: UniversalLinkManager
     @State var nu: String = ""
     @State var Provider: String = ""
     @State var phone: String = ""
-    @AppStorage("hasOrderHandle") var hasOrderHandle: Bool = false
     @AppStorage("Firstused") var used = false
     @AppStorage("CachedToken") var token = ""
     private let characterLimit = 4
     var body: some View {
         NavigationStack {
             List {
-                if hasOrderHandle {
-                    Section {
-                        NavigationLink(destination: ExpressView(nu: orderNu, Provider: orderProvider, phone: orderPhone), label: {
-                            HStack {
-                                Image(systemName: "text.magnifyingglass")
-                                VStack {
-                                    Text("\(orderNu)")
-                                        .font(.headline)
-                                    Text("来自分享的订单")
-                                        .font(.subheadline)
-                                }
-                            }
-                        })
-                    }
-                    .onAppear {
-                        let urlString = UIPasteboard.general.string
-
-                        // 确保 URL 有效
-                        if let url = URL(string: urlString ?? "") {
-                            // 使用 URLComponents 来解析 URL
-                            if let components = URLComponents(url: url, resolvingAgainstBaseURL: false) {
-                                
-                                // 提取查询参数
-                                let queryItems = components.queryItems
-                                
-                                // 获取具体参数值
-                                let nu = queryItems?.first(where: { $0.name == "nu" })?.value
-                                let provider = queryItems?.first(where: { $0.name == "provider" })?.value
-                                let phone = queryItems?.first(where: { $0.name == "phone" })?.value
-                                
-                                // 输出结果
-                                orderNu = nu ?? ""
-                                orderProvider = provider ?? ""
-                                orderPhone = phone ?? ""
-                                
-                                if orderNu.isEmpty {
-                                    hasOrderHandle = false
-                                }
-                            }
-                        }
-                    }
-                }
                 Picker("快递承运商", selection: $Provider, content: {
                     Text("请选择").tag("")
                     Text("顺丰速运").tag("shunfeng")
@@ -134,9 +89,6 @@ struct ContentView: View {
                         }
                     }
                 }
-                Section {
-                    
-                }
             }
             .navigationTitle("快递查询")
             .onAppear() {
@@ -163,6 +115,17 @@ struct ContentView: View {
                         }
                     })
                 })
+            }
+            
+            NavigationLink(
+                destination: ExpressView(
+                    nu: universalLinkManager.nu,
+                    Provider: universalLinkManager.provider,
+                    phone: universalLinkManager.phone
+                ),
+                isActive: $universalLinkManager.shouldNavigateToExpressView
+            ) {
+                EmptyView()
             }
         }
     }

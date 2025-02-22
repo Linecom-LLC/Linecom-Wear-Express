@@ -75,6 +75,11 @@ struct ExpressView: View {
             }
         }
         .navigationTitle("运单详情")
+        .toolbar() {
+            ToolbarItem(placement: .topBarTrailing, content: {
+                ShareLink(item: URL(string: "https://express.linecom.net.cn/ticket?nu=\(nu)&provider=\(Provider)&phone=\(phone)")!, message: Text("使用 澪空软件速递查询，随时随地查询快件信息！"))
+            })
+        }
         } else if isLoading {
             VStack {
                 ProgressView()
