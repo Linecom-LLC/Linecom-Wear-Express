@@ -16,7 +16,7 @@ struct ExpressView: View {
     var isBookmark: Bool = false
     @State var tokenstate = false
     @AppStorage("CachedToken") var token = ""
-    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zhongtong": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
+    @State var ListofExpress = ["shunfeng": "顺丰速运", "yuantong": "圆通速递", "yunda": "韵达快递", "jtexpress": "极兔速递", "ems": "中国邮政", "shentong": "申通快递", "debangwuliu": "德邦物流", "jd": "京东物流", "zto": "中通快递","dannao": "菜鸟速递","baishiwuliu": "百世快运"]
     @State var ListofState = ["0": "运输中", "1": "已揽件", "2": "异常", "3": "已签收", "4": "被拒收", "5": "派送中", "6": "被退回", "7": "已转寄", "8": "清关中", "10": "请求失败", "301": "本人已签收", "302": "异常已签收", "303": "已被代签收", "304": "已取出"]
     @State var status: String = ""
     @State var result = ""

@@ -7,18 +7,26 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    @AppStorage("PushNotificationToken") var pushNotificationToken: String = ""
+    @AppStorage("GlobalEnableNotification") var globalEnableNotification: Bool = true
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        UIApplication.shared.registerForRemoteNotifications()
+        pushNotificationToken = ""
+        if globalEnableNotification {
+            UIApplication.shared.registerForRemoteNotifications()
+        }
         return true
     }
     
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        print(deviceToken)
+        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
+        pushNotificationToken = token
+        print(token)
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-        print(error)
+        print(error.localizedDescription)
     }
 }
