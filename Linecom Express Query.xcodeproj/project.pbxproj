@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03A74D602D6992750040229D /* Linecom Express Query AppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 03A74D512D6992730040229D /* Linecom Express Query AppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		03A74DDD2D6993600040229D /* LinecomKit in Frameworks */ = {isa = PBXBuildFile; productRef = 03A74DDC2D6993600040229D /* LinecomKit */; };
+		0377F6C52D6CAD44008559DA /* Linecom Express Query AppClip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 0377F6B62D6CAD43008559DA /* Linecom Express Query AppClip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		03C245822CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
 		03C245832CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
 		03C245842CCA87BB00827826 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 03C245802CCA87BB00827826 /* Localizable.xcstrings */; };
@@ -21,11 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		03A74D5E2D6992750040229D /* PBXContainerItemProxy */ = {
+		0377F6C32D6CAD44008559DA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 03FEA0412CAA643300195891 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 03A74D502D6992730040229D;
+			remoteGlobalIDString = 0377F6B52D6CAD43008559DA;
 			remoteInfo = "Linecom Express Query AppClip";
 		};
 		03FEA05B2CAA643400195891 /* PBXContainerItemProxy */ = {
@@ -44,7 +43,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
 			dstSubfolderSpec = 16;
 			files = (
-				03A74D602D6992750040229D /* Linecom Express Query AppClip.app in Embed App Clips */,
+				0377F6C52D6CAD44008559DA /* Linecom Express Query AppClip.app in Embed App Clips */,
 			);
 			name = "Embed App Clips";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +62,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		03A74D512D6992730040229D /* Linecom Express Query AppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query AppClip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0377F6B62D6CAD43008559DA /* Linecom Express Query AppClip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query AppClip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C245802CCA87BB00827826 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		03C666002CB9572D00362D43 /* 澪软速递查询.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "澪软速递查询.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,27 +70,9 @@
 		03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Linecom Express Query Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		03A74D612D6992750040229D /* Exceptions for "Linecom Express Query AppClip" folder in "Linecom Express Query AppClip" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 03A74D502D6992730040229D /* Linecom Express Query AppClip */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		0324096B2CB158AE006AE746 /* Linecom Express Query AppClip */ = {
+		0377F6B72D6CAD43008559DA /* Linecom Express Query AppClip */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Linecom Express Query AppClip";
-			sourceTree = "<group>";
-		};
-		03A74D522D6992730040229D /* Linecom Express Query AppClip */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				03A74D612D6992750040229D /* Exceptions for "Linecom Express Query AppClip" folder in "Linecom Express Query AppClip" target */,
-			);
 			path = "Linecom Express Query AppClip";
 			sourceTree = "<group>";
 		};
@@ -118,11 +99,10 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03A74D4E2D6992730040229D /* Frameworks */ = {
+		0377F6B32D6CAD43008559DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A74DDD2D6993600040229D /* LinecomKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,10 +154,9 @@
 				03C245802CCA87BB00827826 /* Localizable.xcstrings */,
 				03FEA04B2CAA643300195891 /* Linecom Express Query */,
 				03FEA05D2CAA643400195891 /* Linecom Express Query Watch App */,
-				0324096B2CB158AE006AE746 /* Linecom Express Query AppClip */,
 				03C666012CB9572D00362D43 /* Linecom Express Query macOS */,
 				03C6662A2CB970F900362D43 /* Linecom Express Query tvOS */,
-				03A74D522D6992730040229D /* Linecom Express Query AppClip */,
+				0377F6B72D6CAD43008559DA /* Linecom Express Query AppClip */,
 				032409592CB1459D006AE746 /* Frameworks */,
 				03FEA04A2CAA643300195891 /* Products */,
 			);
@@ -190,7 +169,7 @@
 				03FEA0592CAA643400195891 /* Linecom Express Query Watch App.app */,
 				03C666002CB9572D00362D43 /* 澪软速递查询.app */,
 				03C666292CB970F900362D43 /* Linecom Express Query tvOS.app */,
-				03A74D512D6992730040229D /* Linecom Express Query AppClip.app */,
+				0377F6B62D6CAD43008559DA /* Linecom Express Query AppClip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -198,27 +177,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		03A74D502D6992730040229D /* Linecom Express Query AppClip */ = {
+		0377F6B52D6CAD43008559DA /* Linecom Express Query AppClip */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03A74D622D6992750040229D /* Build configuration list for PBXNativeTarget "Linecom Express Query AppClip" */;
+			buildConfigurationList = 0377F6C72D6CAD44008559DA /* Build configuration list for PBXNativeTarget "Linecom Express Query AppClip" */;
 			buildPhases = (
-				03A74D4D2D6992730040229D /* Sources */,
-				03A74D4E2D6992730040229D /* Frameworks */,
-				03A74D4F2D6992730040229D /* Resources */,
+				0377F6B22D6CAD43008559DA /* Sources */,
+				0377F6B32D6CAD43008559DA /* Frameworks */,
+				0377F6B42D6CAD43008559DA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				03A74D522D6992730040229D /* Linecom Express Query AppClip */,
+				0377F6B72D6CAD43008559DA /* Linecom Express Query AppClip */,
 			);
 			name = "Linecom Express Query AppClip";
 			packageProductDependencies = (
-				03A74DDC2D6993600040229D /* LinecomKit */,
 			);
 			productName = "Linecom Express Query AppClip";
-			productReference = 03A74D512D6992730040229D /* Linecom Express Query AppClip.app */;
+			productReference = 0377F6B62D6CAD43008559DA /* Linecom Express Query AppClip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 		03C665FF2CB9572D00362D43 /* 澪软速递查询 */ = {
@@ -281,7 +259,7 @@
 			);
 			dependencies = (
 				03FEA05C2CAA643400195891 /* PBXTargetDependency */,
-				03A74D5F2D6992750040229D /* PBXTargetDependency */,
+				0377F6C42D6CAD44008559DA /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				03FEA04B2CAA643300195891 /* Linecom Express Query */,
@@ -327,7 +305,7 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					03A74D502D6992730040229D = {
+					0377F6B52D6CAD43008559DA = {
 						CreatedOnToolsVersion = 16.2;
 					};
 					03C665FF2CB9572D00362D43 = {
@@ -365,7 +343,7 @@
 			targets = (
 				03FEA0482CAA643300195891 /* Linecom Express Query */,
 				03FEA0582CAA643400195891 /* Linecom Express Query Watch App */,
-				03A74D502D6992730040229D /* Linecom Express Query AppClip */,
+				0377F6B52D6CAD43008559DA /* Linecom Express Query AppClip */,
 				03C665FF2CB9572D00362D43 /* 澪软速递查询 */,
 				03C666282CB970F900362D43 /* Linecom Express Query tvOS */,
 			);
@@ -373,7 +351,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03A74D4F2D6992730040229D /* Resources */ = {
+		0377F6B42D6CAD43008559DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -415,7 +393,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		03A74D4D2D6992730040229D /* Sources */ = {
+		0377F6B22D6CAD43008559DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,10 +431,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03A74D5F2D6992750040229D /* PBXTargetDependency */ = {
+		0377F6C42D6CAD44008559DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 03A74D502D6992730040229D /* Linecom Express Query AppClip */;
-			targetProxy = 03A74D5E2D6992750040229D /* PBXContainerItemProxy */;
+			target = 0377F6B52D6CAD43008559DA /* Linecom Express Query AppClip */;
+			targetProxy = 0377F6C32D6CAD44008559DA /* PBXContainerItemProxy */;
 		};
 		03FEA05C2CAA643400195891 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -466,7 +444,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03A74D632D6992750040229D /* Debug */ = {
+		0377F6C82D6CAD44008559DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -480,7 +458,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom Express Query AppClip/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "澪空软件速递查询";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -501,7 +478,7 @@
 			};
 			name = Debug;
 		};
-		03A74D642D6992750040229D /* Release */ = {
+		0377F6C92D6CAD44008559DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -515,7 +492,6 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom Express Query AppClip/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "澪空软件速递查询";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -935,11 +911,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03A74D622D6992750040229D /* Build configuration list for PBXNativeTarget "Linecom Express Query AppClip" */ = {
+		0377F6C72D6CAD44008559DA /* Build configuration list for PBXNativeTarget "Linecom Express Query AppClip" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				03A74D632D6992750040229D /* Debug */,
-				03A74D642D6992750040229D /* Release */,
+				0377F6C82D6CAD44008559DA /* Debug */,
+				0377F6C92D6CAD44008559DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1003,11 +979,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		03A74DDC2D6993600040229D /* LinecomKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
-			productName = LinecomKit;
-		};
 		03C665F42CB952FC00362D43 /* LinecomKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0324095F2CB14B57006AE746 /* XCRemoteSwiftPackageReference "DarockKit" */;
