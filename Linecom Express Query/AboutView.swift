@@ -27,6 +27,8 @@ struct AboutView: View {
             Divider()
             
             Text("Developed by Linecom").padding().font(.headline)
+            Link("浙ICP备2025182988号-6A", destination: URL(string: "https://beian.miit.gov.cn")!)
+                .foregroundColor(.secondary)
             Spacer()
         }
     }
