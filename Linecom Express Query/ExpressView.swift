@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UIKit
 import LinecomKit
 import Alamofire
 
@@ -29,7 +30,7 @@ struct ExpressView: View {
         if !isLoading && status == "200" {
         List {
             Section(header: Text("基本信息")) {
-                
+                Text("订单号：\(nu)")
                 Text("承运商：\(ListofExpress[Provider] ?? "未知")")
                 Text("当前状态：\(ListofState[nowState] ?? "未知")")
                 
@@ -64,6 +65,16 @@ struct ExpressView: View {
                         Text("\(item.context)")
                             .font(.subheadline)
                             .foregroundColor(.gray)
+                            .contextMenu() {
+                                Button(action: {
+                                    UIPasteboard.general.string = item.context
+                                }, label: {
+                                    HStack {
+                                        Image(systemName: "document.on.clipboard")
+                                        Text("复制")
+                                    }
+                                })
+                            }
                         
                         // 显示位置
                         Text("\(item.location)")
