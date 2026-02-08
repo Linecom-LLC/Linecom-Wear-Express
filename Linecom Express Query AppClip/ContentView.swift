@@ -25,7 +25,6 @@ struct ContentView: View {
                     Text("中国邮政").tag("ems")
                     Text("圆通速递").tag("yuantong")
                     Text("京东物流").tag("jd")
-                    Text("中通快递").tag("zhongtong")
                     Text("韵达快递").tag("yunda")
                     Text("极兔速递").tag("jtexpress")
                     Text("申通快递").tag("shentong")

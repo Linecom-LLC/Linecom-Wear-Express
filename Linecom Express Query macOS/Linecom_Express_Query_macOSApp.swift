@@ -11,9 +11,25 @@ import AppKit
 @main
 struct Linecom_Express_Query_macOSApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    init() {
+        NSWindow.allowsAutomaticWindowTabbing = false
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+            .commands {
+                CommandGroup(replacing: .appInfo) {
+                    Button {
+                        AboutWindowController.shared.show()
+                    } label: {
+                        HStack {
+                            Image(systemName: "info.circle")
+                            Text("关于 澪软速递查询")
+                        }
+                    }
+                }
+            }
     }
 }

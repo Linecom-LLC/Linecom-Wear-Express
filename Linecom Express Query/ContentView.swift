@@ -25,7 +25,6 @@ struct ContentView: View {
                     Text("中国邮政").tag("ems")
                     Text("圆通速递").tag("yuantong")
                     Text("京东物流").tag("jd")
-                    Text("中通快递").tag("zhongtong")
                     Text("韵达快递").tag("yunda")
                     Text("极兔速递").tag("jtexpress")
                     Text("申通快递").tag("shentong")
@@ -108,10 +107,10 @@ struct ContentView: View {
                 })
                 
                 ToolbarItem(placement: .topBarTrailing, content: {
-                    NavigationLink(destination: {AboutView().navigationTitle("关于")}, label: {
+                    NavigationLink(destination: {SettingsView().navigationTitle("设置")}, label: {
                         HStack {
-                            Text("关于")
-                            Image(systemName: "info.circle")
+                            Text("设置")
+                            Image(systemName: "gear")
                         }
                     })
                 })

@@ -10,6 +10,7 @@ import UIKit
 
 @main
 struct Linecom_Wear_ExpressApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @StateObject var universalLinkManager = UniversalLinkManager()
     var body: some Scene {
         WindowGroup {

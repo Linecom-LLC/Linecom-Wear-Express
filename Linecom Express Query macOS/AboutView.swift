@@ -15,7 +15,7 @@ struct AboutView: View {
                 Image("abouticon").resizable().scaledToFit()
                     .cornerRadius(30)
                     .padding()
-                    .frame(width: 150)
+                    .frame(width: 128)
                 
                 VStack{
                     Text("澪空软件速递查询")
