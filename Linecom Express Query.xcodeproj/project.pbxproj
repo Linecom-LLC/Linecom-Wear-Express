@@ -546,6 +546,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom-Express-Query-macOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Linecom LLC All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -578,6 +579,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Linecom-Express-Query-macOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "澪软速递查询";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.shopping";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© 2024 Linecom LLC All rights reserved.";
 				LD_RUNPATH_SEARCH_PATHS = (
