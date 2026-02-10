@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "express-tvOS-middle-400.png",
       "idiom" : "tv",
       "scale" : "1x"
     },
     {
-      "filename" : "express-tvOS-middle-800.png",
+      "filename" : "Linecom Express Query Newlogo tvOS Front_2x.png",
       "idiom" : "tv",
       "scale" : "2x"
     }
